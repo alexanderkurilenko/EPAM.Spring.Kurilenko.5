@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D66EB4C4-82AA-4FCA-A1C2-628778788847}</ProjectGuid>
+    <ProjectGuid>{6E983133-C175-460B-BCF7-B1B8A91A1260}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Task2.Tests</RootNamespace>
-    <AssemblyName>Task2.Tests</AssemblyName>
+    <RootNamespace>Task1.NUnit.Tests</RootNamespace>
+    <AssemblyName>Task1.NUnit.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -54,16 +54,16 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="Gcd_Tests.cs" />
+    <Compile Include="NUnitNewtonSqrtTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Task2Logic\Task2Logic.csproj">
-      <Project>{ada43082-9837-4b8e-a8bb-c29682eef935}</Project>
-      <Name>Task2Logic</Name>
+    <ProjectReference Include="..\Task1Logic\Task1Logic.csproj">
+      <Project>{b819554e-03c7-4682-994a-26c56d8e96f8}</Project>
+      <Name>Task1Logic</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

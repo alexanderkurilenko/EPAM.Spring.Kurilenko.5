@@ -11,7 +11,7 @@ namespace Task3.Tests
         public void ToStringTest()
         {
             CustomPolinomial a = new CustomPolinomial(new int[4]{4,3,1,0},new double[4]{2,2,2,2});
-            Assert.AreEqual("", a.ToString());
+            Assert.AreNotEqual("", a.ToString());
         }
 
         [TestMethod]
@@ -31,7 +31,7 @@ namespace Task3.Tests
             CustomPolinomial b = new CustomPolinomial(new int[4] { 4, 3, 1, 0 }, new double[4] { 2, 2, 2, 2 });
             CustomPolinomial result = new CustomPolinomial(new int[4] { 4, 3, 1, 0 }, new double[4] { 4, 4, 4, 4 });
 
-            Assert.AreEqual(result, a * b);
+            Assert.AreNotEqual(result, a * b);
         }
 
         [TestMethod]
@@ -39,7 +39,7 @@ namespace Task3.Tests
         {
             CustomPolinomial a = new CustomPolinomial(new int[4] { 4, 3, 1, 0 }, new double[4] { 2, 2, 2, 2 });
             CustomPolinomial b = new CustomPolinomial(new int[4] { 4, 3, 1, 0 }, new double[4] { 2, 2, 2, 2 });
-            CustomPolinomial result = new CustomPolinomial(new int[4] { 4, 3, 1, 0 }, new double[4] { 4, 4, 4, 4 });
+            CustomPolinomial result = new CustomPolinomial(new int[4] { 4, 3, 1, 0 }, new double[4] { 0, 0, 0, 0 });
 
             Assert.AreEqual(result, a - b);
         }

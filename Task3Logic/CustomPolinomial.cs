@@ -192,9 +192,9 @@ namespace Task3Logic
             {
                 for (int j = 0; j < p2.polinomialElements.Count; j++)
                 {
-                    int resulstPower = p1.polinomialElements.Keys.ElementAt(i) + p2.polinomialElements.Keys.ElementAt(j);
+                    int resultPower = p1.polinomialElements.Keys.ElementAt(i) + p2.polinomialElements.Keys.ElementAt(j);
                     double resultCoefficieent = p1.polinomialElements.Values.ElementAt(i) * p2.polinomialElements.Values.ElementAt(j);
-                    powers[i * p2.polinomialElements.Count + j] = resulstPower;
+                    powers[i * p2.polinomialElements.Count + j] = resultPower;
                     coefficient[i * p2.polinomialElements.Count + j] += resultCoefficieent;
                 }
             }

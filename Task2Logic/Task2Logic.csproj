@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3FB9618A-B66A-4ED5-A005-DB83239BE282}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{ADA43082-9837-4B8E-A8BB-C29682EEF935}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Task3Console</RootNamespace>
-    <AssemblyName>Task3Console</AssemblyName>
+    <RootNamespace>Task2Logic</RootNamespace>
+    <AssemblyName>Task2Logic</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -41,25 +39,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="GcdSolver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Task2.Tests\Task2.Tests.csproj">
-      <Project>{d66eb4c4-82aa-4fca-a1c2-628778788847}</Project>
-      <Name>Task2.Tests</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Task2Logic\Task2Logic.csproj">
-      <Project>{ada43082-9837-4b8e-a8bb-c29682eef935}</Project>
-      <Name>Task2Logic</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Task3Logic\Task3Logic.csproj">
-      <Project>{7d88c8ff-d635-4d67-a35e-0593781bd3cb}</Project>
-      <Name>Task3Logic</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
